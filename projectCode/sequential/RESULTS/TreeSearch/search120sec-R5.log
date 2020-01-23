@@ -1,0 +1,22 @@
+Time expired: 120 seconds
+Best value: 6669
+Best args found: 
+numFryers             1
+maxFryerSize          3
+numCustQueues         1
+openHour              5
+closeHour             21
+corndogPrice          2.000000
+corndogCost           1.000000
+corndogCookTime       3
+wage                  7.750000
+customerPerMin        2
+drinkChance           0.400000
+drinkTempChance       0.100000
+foodChance            0.700000
+foodMealChance        0.100000
+customerMaxQueueTime  5
+customerChance        0.600000
+customerChanceHour    0.050000
+Hourly temps:         60 61 62 63 64 65 66 67 68 69 70 71 72 71 70 69 68 67 66 65 64 63 62
+

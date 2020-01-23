@@ -1,0 +1,27 @@
+Time used:      50 seconds
+Alpha:          0.900000
+temperature:    1000.000000
+end:            0.010000
+max iterations: 50000
+iterations run: 110
+Best value:     24045
+Best args found: 
+numFryers             1
+maxFryerSize          5
+numCustQueues         2
+openHour              5
+closeHour             22
+corndogPrice          4.000000
+corndogCost           1.000000
+corndogCookTime       4
+wage                  8.250000
+customerPerMin        2
+drinkChance           0.600000
+drinkTempChance       0.100000
+foodChance            0.700000
+foodMealChance        0.150000
+customerMaxQueueTime  7
+customerChance        0.600000
+customerChanceHour    0.100000
+Hourly temps:         60 61 62 63 64 65 66 67 68 69 70 71 72 71 70 69 68 67 66 65 64 63 62
+

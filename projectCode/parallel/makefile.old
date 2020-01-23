@@ -1,0 +1,24 @@
+CC=gcc
+CFLAGS=-std=gnu99 -pthread
+LIBS=-lm
+DBFLAGS=-g
+
+all: pppSim pppResults
+
+pppSim: pppSim.c cornDogModule.c pppSim.h
+	$(CC) $(CFLAGS) -I/usr/include/python2.7 -o pppSim pppSim.c
+
+pppResults: pppResults.c cornDogModule.c pppSim.h
+	$(CC) $(CFLAGS) -I/usr/include/python2.7 -o pppResults pppResults.c -lm
+
+debugs: pppSim.c cornDogModule.c pppSim.h
+	$(CC) $(CFLAGS) $(DBFLAGS) -I/usr/include/python2.7 -o pppSim pppSim.c
+
+clean:
+	rm pppSim pppResults
+
+runsim:
+	./pppSim 2 5 2 6 22 4 1.25 3 7.75 2 0.3 0.1 0.9 0.2 6 0.5 0.1 60 60 60 61 62 63 64 65 66 67 68 69 71 73 75 76 77 76 75 74 73 72 71 70
+
+runresults:
+	./pppResults b 30 30

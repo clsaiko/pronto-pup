@@ -1,0 +1,37 @@
+/*File:   README
+* Date:   12/9/18
+* Name:   Chris Saiko */
+
+README for: EE 5351 Parallel Project
+
+How to compile:
+To compile, the supplied makefile may be used to compile the programs.
+
+$ make all
+
+$ make clean
+This will delete any compiled executables.
+
+How to use: To run the pppResGPU program, execute the pppResGPU file as shown
+below. The supplied makefile may be used to run a test case. Run pppResGPU with
+no arguments to see a list of argument details.
+
+Program Usage: $ ./pppResults <search type> <sim iterations>  <time limit in seconds>
+b - Tree Search, h - Hill Climbing, s - Simulated Annealing
+
+Example:
+$ ./pppResGPU b 30 30
+
+Example:
+$ make runResGPU
+
+pppResGPU Notes: This application will output the best state found to the console,
+along with the search method used, wall time, and state.
+
+Program Directories and Files:
+/projectCode/parallel/pppResults
+/projectCode/parallel/pppResults.c
+/projectCode/parallel/pppSim
+/projectCode/parallel/pppSim.c
+/projectCode/parallel/pppSim.h
+/projectCode/parallel/makefile

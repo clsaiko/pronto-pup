@@ -1,0 +1,64 @@
+/*File:   README
+* Date:   12/9/18
+* Name:   Chris Saiko */
+
+README for: CSCI 4511 AI Project
+README for: EE 5351 Sequential Project
+
+How to compile:
+To compile, the supplied makefile may be used to compile the programs.
+
+$ make all
+
+$ make clean
+This will delete any compiled executables.
+
+How to use: To run the pppResults program, execute the pppResults file as shown
+below. The supplied makefile may be used to run a test case. Run pppResults with
+no arguments to see a list of argument details.
+
+Program Usage: $ ./pppResults <search type> <sim iterations> <time limit in seconds>
+
+b - Tree Search, h - Hill Climbing, s - Simulated Annealing
+
+Example:
+$ ./pppResults b 30 30
+
+Example:
+$ make runresults
+
+pppResults Notes: This application will output the best state found to a
+log file, along with the search method used, wall time, and state.
+Raw data is output to log files, which are named with the type of algorithm used,
+and the amount of time they were allowed/were able to run. Each log file name
+was manually appended with a run number, and placed in the RESULTS folder, as can
+been seen in my Git repository.
+
+How to use: To run the pppSim program, execute the pppSim file as shown below.
+The supplied makefile may be used to run a test case. Run pppSim with no
+arguments to see a list of argument details.
+
+Example:
+$ ./pppSim <argument list...>
+
+Example:
+$ make runsim
+
+pppSim Notes: This driver program for pppSim is really only used for test
+purposes. The (initial) primary reason for pppSim was to operate as a C extension
+module (cornDogModule.c) for use within a Python program. As such, the pppSim
+driver takes in an enormous number of arguments to supply to the cornDogSim
+function. It is possibly a section for future work, but main functions have been
+implemented in C, and not Python, for now.
+
+Program Directories and Files:
+/projectCode/sequential/pppResults
+/projectCode/sequential/pppResults.c
+/projectCode/sequential/pppSim
+/projectCode/sequential/pppSim.c
+/projectCode/sequential/pppSim.h
+/projectCode/sequential/cornDogModule.c
+/projectCode/sequential/makefile
+
+In pppResults.c for the LS_simAnn function, if I can get it working, I'm using this
+as inspiration: https://www.codeproject.com/Articles/13789/Simulated-Annealing-Example-in-C
